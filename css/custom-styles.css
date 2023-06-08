@@ -55,3 +55,22 @@
         width: 100%;
     }
 }
+
+@media screen and (width < 991px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+@media screen and (width > 991px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
+}
