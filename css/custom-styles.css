@@ -19,6 +19,12 @@
 
 .space-exploration {
     position: relative;
+    color: #fff;
+}
+
+.space-exploration:hover{
+    color: #e6e6e6;
+    opacity: 0.9;
 }
 
 .space-exploration-image {
