@@ -1,0 +1,51 @@
+.home-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hero, .space-exploration {
+    width: 50%;
+    height: 100vh;
+}
+
+.hero-unit-moon-exploration .hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.space-exploration {
+    position: relative;
+}
+
+.space-exploration-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url('../images/final-frontier_large.jpg') center / cover no-repeat;
+}
+
+.space-exploration-copy {
+    text-align: center;
+    width: 980px;
+    max-width: 100%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 760px) {
+    .home-container {
+        flex-direction: column;
+    }  
+    
+    .hero, .space-exploration {
+        width: 100%;
+    }
+}
